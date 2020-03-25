@@ -1,12 +1,15 @@
 import React from 'react';
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 import Pokedex from './components/Pokedex';
 
 function App() {
   return (
-    <Pokedex />
+    <div className="container">
+      <Pokedex />
+    </div>
   )
 }
 

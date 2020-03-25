@@ -5,14 +5,15 @@ class PokemonCard extends React.Component{
     constructor(props){
         super(props);
         
+        
     }
 
     render(){
         return (
-            <div>
+            <div className="col-md-4">
                 {this.props.name}<br />
                 {this.props.type1} / {this.props.type2}
-                {this.props.sprite}
+                <img src={this.props.sprite} />
             </div>
         )
     }
